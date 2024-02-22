@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.audio.AudioFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/select_an_option"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_17sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:layout_marginRight="@dimen/_5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/recordAudio"
+            android:layout_width="@dimen/_160dp"
+            android:layout_height="@dimen/_80dp"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_marginRight="@dimen/_16dp"
+            android:background="@drawable/rounded_button"
+            android:drawableBottom="@drawable/record_audio"
+            android:text="@string/record_audio"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_17sp" />
+
+
+        <Button
+            android:id="@+id/importAudio"
+            android:layout_width="@dimen/_160dp"
+            android:layout_height="@dimen/_80dp"
+            android:layout_marginLeft="@dimen/_16dp"
+            android:background="@drawable/rounded_button"
+            android:drawableBottom="@drawable/import_from_storage"
+            android:text="@string/import_from_storage"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_17sp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/playAudioButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="?android:attr/selectableItemBackground"
+        android:backgroundTint="?attr/colorControlHighlight"
+        android:clickable="true"
+        android:drawableLeft="@drawable/audio_play"
+        android:drawablePadding="@dimen/_8dp"
+        android:elevation="@dimen/_2dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:padding="@dimen/_16dp"
+        android:stateListAnimator="@null"
+        android:text="@string/play_audio"
+        android:translationZ="@dimen/_2dp" />
+
+    <ImageView
+        android:id="@+id/audioShowHide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/audio_image"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="@dimen/_100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_stop_button"
+        android:padding="@dimen/_16dp"
+        android:text="@string/stop"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_17sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/brown"
+    android:orientation="vertical"
+    tools:context=".ui.image.ImageFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/select_an_option"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_17sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:layout_marginRight="@dimen/_5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/captureImage"
+            android:layout_width="@dimen/_160dp"
+            android:layout_height="@dimen/_80dp"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_marginRight="@dimen/_16dp"
+            android:background="@drawable/rounded_button"
+            android:drawableBottom="@drawable/capture_image"
+            android:text="@string/capture_image"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_17sp" />
+
+
+        <Button
+            android:id="@+id/importImageFromGallery"
+            android:layout_width="@dimen/_160dp"
+            android:layout_height="@dimen/_80dp"
+            android:layout_marginRight="@dimen/_16dp"
+            android:background="@drawable/rounded_button"
+            android:drawableBottom="@drawable/import_from_gallery"
+            android:text="@string/import_video_from_gallery"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_17sp" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/_300dp"
+        android:layout_height="@dimen/_500dp"
+        android:layout_gravity="center" />
+
+
+</LinearLayout>
